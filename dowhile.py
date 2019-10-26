@@ -7,20 +7,22 @@
 
 def main():
     # this function uses a do while loop to get the factorial of integers
-    adder = 0
-    answer = 0
+
+    # variables
+    counter = 0
+    factorial = 1
 
     # input
     integer = int(input("Enter an integer: "))
     print("")
 
     # process & output
-    while adder <= integer:
-        answer = answer + adder
-        adder = adder + 1
+    while counter < integer:
+        counter = counter + 1
+        factorial = factorial*counter
 
-    print("The answer is {}"
-          .format(answer))
+    print("The factorial of", integer, "is {}"
+          .format(factorial))
 
 
 if __name__ == "__main__":
